@@ -1,0 +1,15 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": [
+    "AGENTS.md",
+    "docs/REQUISITOS.md",
+    "docs/ARQUITETURA.md",
+    "docs/ROADMAP.md",
+    "docs/PROGRESS.md",
+    "docs/WORKFLOW_REA_IA_OPENCODE.md",
+    "docs/LICENCIAMENTO.md",
+    "docs/VERSIONAMENTO_E_COMPATIBILIDADE.md"
+  ],
+  "todo": true,
+  "share": "disabled"
+}

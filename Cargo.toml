@@ -1,0 +1,23 @@
+[workspace]
+resolver = "2"
+
+members = [
+    "crates/ultra-stream-core",
+    "crates/ultra-stream-desktop"
+]
+
+default-members = [
+    "crates/ultra-stream-core",
+    "crates/ultra-stream-desktop"
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "GPL-3.0-or-later"
+rust-version = "1.85"
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+thiserror = "2"
+tracing = "0.1"
