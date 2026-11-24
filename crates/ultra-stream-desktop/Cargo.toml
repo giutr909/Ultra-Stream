@@ -1,0 +1,15 @@
+[package]
+name = "ultra-stream-desktop"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "Ultra Stream — interface desktop para Windows (esqueleto mínimo)"
+license = "GPL-3.0-or-later"
+publish = false
+
+[[bin]]
+name = "ultra-stream-desktop"
+path = "src/main.rs"
+
+[dependencies]
+ultra-stream-core = { path = "../ultra-stream-core" }

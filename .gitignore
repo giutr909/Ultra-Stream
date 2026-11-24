@@ -1,0 +1,100 @@
+# ============================================================
+# Ultra Stream — .gitignore
+# Regras para Rust/Cargo, C/C++, CMake/MSBuild, Visual Studio,
+# artefatos de build, temporários e arquivos locais.
+# Documentação, fontes e configurações do projeto NÃO são ignoradas.
+# ============================================================
+
+# ---------- Rust / Cargo ----------
+/target/
+**/target/
+*.rlib
+*.rmeta
+*.d
+*.profraw
+*.profdata
+
+# ---------- C / C++ ----------
+*.o
+*.obj
+*.lo
+*.la
+*.a
+*.lib
+*.exp
+*.ilk
+*.pdb
+*.idb
+*.gcda
+*.gcno
+*.gcov
+
+# ---------- Binários gerados ----------
+*.exe
+*.dll
+*.so
+*.so.*
+*.dylib
+*.out
+
+# ---------- CMake ----------
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+cmake_install.cmake
+cmake_uninstall.cmake
+install_manifest.txt
+CTestTestfile.cmake
+Testing/
+/build/
+/build-*/
+/out/
+/out-*/
+
+# ---------- MSBuild / Visual Studio ----------
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.vcproj
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
+ipch/
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+
+# ---------- Debug / profiling ----------
+*.log
+*.trace
+*.etl
+*.dmp
+*.stackdump
+
+# ---------- Temporários ----------
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+*~
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ---------- Arquivos locais de workspace/IDE ----------
+# O arquivo de workspace multi-root vive FORA do repositório (E:\ultra-stream.code-workspace).
+*.code-workspace
+# Configurações locais do usuário (os .vscode/*.json do projeto são versionados).
+.vscode/*.local.json
+.vscode/settings.local.json
+
+# ---------- Ferramentas / caches ----------
+.idea/
+.cache/
+.ccache/
+compile_commands.json
